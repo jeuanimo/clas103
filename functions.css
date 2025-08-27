@@ -1,0 +1,18 @@
+body {
+    font-family:arial;
+
+
+}
+.btn{
+    background-color: orange;
+    color: black
+
+}
+#results{
+    background-color: #dedede;
+    height:200px;
+    margin:20;
+}
+.conv{
+    margin:20;
+}

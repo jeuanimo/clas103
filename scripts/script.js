@@ -134,13 +134,19 @@ object = "a purple dinosaur Named Barney";
 place = "on the Saint Louis Arch grounds";
 time = "a cloud covered day";
 
-
 // Creating my story
 console.log("---  Funny Story ---");
 console.log(character + " was at " + place + " on " + time + ".");
 console.log(
-  "Suddenly, " + character +  " saw " + object + " and decided to " + action + "." );
-
-console.log( "It turned out to be " + occasion + " and everyone had a great time!" );
-
-// It worked for me :) Please show me love on the grade :)
+  "Suddenly, " +
+    character +
+    " saw " +
+    object +
+    " and decided to " +
+    action +
+    "."
+);
+console.log(
+  "It turned out to be " + occasion + " and everyone had a great time!"
+);
+// it worked for me :) Please show me love on the grade :)
