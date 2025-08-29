@@ -1,0 +1,20 @@
+#results{
+   font-size: 18px;
+   color: #333;
+   margin-top: 20px;
+}
+.conv {
+  margin: 20px;
+}
+.cold {
+  background-color: #00f;
+  color: #fff;
+}
+.normal {
+  background-color: #0f0;
+  color: #fff;
+}
+.hot {
+  background-color: #f00;
+  color: #fff;
+}

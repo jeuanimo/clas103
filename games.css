@@ -1,0 +1,26 @@
+body {
+  font-family: arial;
+}
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+.controls {
+}
+#character {
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height: 80px;
+  top: 50px;
+  left: 350px;
+}
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+}
