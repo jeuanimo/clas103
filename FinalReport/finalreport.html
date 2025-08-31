@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+  </head>
+  
+  <body>
+    
+    <link rel="stylesheet" href="finalreport.css" />
+   
+      
+    <div>
+    <div class="card-header">
+      <img class="card-header-img" src="./img/cloudbanner.jpeg" alt="Cloud Banner" />
+      
+    </div>
+      <div class="container"><h1 class="rainbow-text"> Temperature Dashboard</h1>
+         <div class="img">
+      <img src="./img/thermometer.jpeg" alt="Thermometer" />
+      
+   
+    <p class="lead">Convert temperatures, generate a conversion table 0→100°C, and view a thermometer visual.</p>
+
+    <div class="controls">
+      <button id="btnCtoF">Celsius ➡ Fahrenheit</button>
+      <button id="btnFtoC">Fahrenheit ➡ Celsius</button>
+      <button id="generateTable">Generate Table</button>
+      <button id="clearTable">Clear Table</button>
+    </div>
+
+    <div class="layout">
+      <!-- Left column: results and table -->
+      <div class="card">
+        <div>
+          <p id="result" aria-live="polite">No conversion yet.</p>
+          <p class="small">Tip: Dr. Jimenez the page uses <code>prompt()</code> to get your input.</p>
+        </div>
+
+        <hr />
+
+        <h3>Conversion Table</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Celsius (°C)</th><th>Fahrenheit (°F)</th></tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- rows added by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Right column: thermometer -->
+    <div class="card therm-container">
+  <div class="muted">Thermometer</div>
+  <div class="thermometer">
+    <div class="therm-fill" id="thermFill"></div>
+  </div>
+  <div class="therm-label" id="thermLabel">-- °C</div>
+  <img id="tempImage" src=""  class="temp-image" />
+  <div class="actions">
+    <button id="resetTherm">Reset</button>        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="finalreport.js"></script>
+</body>
+</html>

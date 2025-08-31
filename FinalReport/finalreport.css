@@ -1,0 +1,192 @@
+:root {
+    --card-header-bg: white;
+  --card-bg: white;
+  --muted: #6b7280;
+  --accent: #111827;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+.card-header {
+    width:950px;
+    max-width: 100%;
+  overflow: hidden;
+    background-color:white;
+  padding:0 px 10px;
+    border-radius: 8px;
+  img{
+    height: 80px;
+    border-radius: 8px;
+  }
+}
+.card-header img {
+    
+    
+  width: 1000px;
+  max-height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.rainbow-text {
+  /* Define the linear gradient background with rainbow colors :) */
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  background-clip: text;
+
+  color: transparent;
+  
+  font-size: 60px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 920px;
+  max-width: 95%;
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+h1 { margin: 0 0 12px 0; font-size: 1.25rem; }
+p.lead { color: var(--muted); margin-top: 4px; }
+
+.controls {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin: 16px 0;
+}
+.controls button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.controls button:hover { transform: translateY(-1px); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 18px;
+  align-items: start;
+}
+
+.card {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+#result {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+hr { margin:12px 0;border:none;border-top:1px solid #f1f1f1 }
+
+.table-wrap { overflow:auto; max-height:340px; }
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+table thead th {
+  text-align:left;
+  padding: 8px;
+  border-bottom: 2px solid #e6e6e6;
+  color: var(--muted);
+  font-weight: 700;
+  background: #fafafa;
+}
+table tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Thermometer */
+.therm-container {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+    padding: 16px;
+    
+}
+.thermometer {
+  width: 80px;
+  height: 240px;
+  background: linear-gradient(180deg,#f8fafc,#eef2f6);
+  border-radius: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid #e6e6e6;
+}
+.therm-fill {
+  width: 100%;
+  height: 0%;
+  border-radius: 28px;
+  transition: height 400ms ease, background-color 400ms ease;
+  box-shadow: inset 0 -6px 12px rgba(0,0,0,0.06);
+}
+.therm-label {
+  font-weight:700;
+  color: var(--accent);
+  margin-top: 8px;
+}
+
+
+.muted { color: var(--muted); font-size: 0.9rem; }
+.small { font-size: 0.85rem; color: #4b5563; }
+.actions { display:flex; gap:8px; margin-top:10px; }
+
+.tempImage {
+    width:50px;
+  height: auto;
+  margin-top: 5px;
+  display: none;
+   align-items: center;          /* center image */
+  justify-content: center;      /* center image */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  img{
+    width:50px;
+    height:auto;
+    border-radius:8px;
+  }
+
+
+ 
+}
+
